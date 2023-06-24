@@ -1,7 +1,37 @@
 loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/FPS-Counter'))()  
   
+local player = game.Players.LocalPlayer
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = player.PlayerGui
+
+local textLabel = Instance.new("TextLabel")
+textLabel.Position = UDim2.new(0, 10, 0, 10) -- Adjust the position as needed
+textLabel.Size = UDim2.new(0, 200, 0, 50) -- Adjust the size as needed
+textLabel.BackgroundTransparency = 1
+textLabel.Text = "Current Game: " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+textLabel.TextColor3 = Color3.new(1, 1, 1) -- White text color
+textLabel.TextSize = 20 -- Adjust the font size as needed
+textLabel.Font = Enum.Font.SourceSansBold
+textLabel.Parent = screenGui
+
+-- RGB light effect
+local light = Instance.new("PointLight")
+light.Color = Color3.new(1, 0, 0) -- Red light color
+light.Range = 10 -- Adjust the range as needed
+light.Parent = player.Character.Head -- Attach the light to the player's head
+
+game:GetService("RunService").RenderStepped:Connect(function()
+    -- Update the game name continuously
+    textLabel.Text = "Current Game: " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+
+    -- Update the light color with an RGB cycle
+    local hue = tick() % 5 / 5 -- Adjust the cycle speed as needed
+    light.Color = Color3.fromHSV(hue, 1, 1)
+end)
+
   
-  
+
+
   
  local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/wAuqhZ3X"))()  
  local window = kavoUi.CreateLib("Devil X V5 ","DarkTheme")  
