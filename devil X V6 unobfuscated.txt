@@ -70,7 +70,11 @@ local Tab10 = window:NewTab("Personal")
   
  ---Buttons  
   
-  
+  local players = game:GetService("Players")
+local user = players.LocalPlayer
+
+Tab10Section:NewButton("Username : " .. game.Players.LocalPlayer.Name .. " ","No description",function()
+end)
   
   
  Tab2Section:NewButton("Hitbox","Increase Range",function()  
