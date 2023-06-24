@@ -34,7 +34,7 @@ end)
 
   
  local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/wAuqhZ3X"))()  
- local window = kavoUi.CreateLib("Devil X V5 ","DarkTheme")  
+ local window = kavoUi.CreateLib("Devil X V6 ","DarkTheme")  
   
  ---Tabs  
 
@@ -58,9 +58,7 @@ end)
  local Tab6Section = Tab6:NewSection("New Script")  
   
  local Tab7 = window:NewTab("Animations fe")  
- local Tab7Section = Tab7:NewSection("Fe animation")  
- local Tab8 = window:NewTab("Christmas")  
- local Tab8Section = Tab8:NewSection("Added in Christmas")  
+ local Tab7Section = Tab7:NewSection("Fe animation")   
  local Tab9 = window:NewTab("Utils")  
  local Tab9Section = Tab9:NewSection("Utils stuff")  
 local Tab10 = window:NewTab("Personal")  
@@ -1584,44 +1582,18 @@ end)
  return oldNC(Self, unpack(Arguments))  
  end)  
  end)  
-  
- Tab8Section:NewButton("(Fe) Permanent mod script","(Note) this is a game",function()  
- game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Checkpoints["Checkpoint 750"].CFrame  
- end)  
+
   
  Tab7Section:NewButton("Krystal dance","No description",function()  
  loadstring(game:HttpGetAsync("https://pastebin.com/raw/FV3HLmTH"))()  
  end)  
   
- Tab8Section:NewButton("Psx Christmas Update","Project Wd",function()  
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Main.lua"))()  
- end)  
-  
- Tab8Section:NewButton("Free gamepass fly race clicker","No description",function()  
- loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/Bla_Race'))()  
- end)  
   
  Tab7Section:NewButton("Krystal dance","No description",function()  
  loadstring(game:HttpGetAsync("https://pastebin.com/raw/FV3HLmTH"))()  
  end)  
   
- Tab8Section:NewButton("EdWard Man Eating","No description",function()  
- loadstring(game:HttpGet("https://pastebin.com/raw/6ZdbXUcL"))()  
- end)  
-  
- Tab8Section:NewButton("Rtx Insane","No description",function()  
- loadstring(game:HttpGet(('https://pastefy.ga/xXkUxA0P/raw'),true))()  
- end)  
-  
- Tab8Section:NewButton("Marvelous playground(desc read)","Free Gamepass",function()  
- if game.CreatorType == Enum.CreatorType.User then  
- game.Players.LocalPlayer.UserId = game.CreatorId  
- end  
- if game.CreatorType == Enum.CreatorType.Group then  
- game.Players.LocalPlayer.UserId = game:GetService("GroupService"):GetGroupInfoAsync(game.CreatorId).Owner.Id  
- end  
- end)  
-  
+ 
  Tab7Section:NewButton("Gorilla tag animation","Keybinds",function()  
  loadstring(game:HttpGet(('https://pastefy.ga/osEThPw1/raw'),true))()  
  end)  
