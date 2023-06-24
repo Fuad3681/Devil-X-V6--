@@ -1792,6 +1792,10 @@ end)
  Tab7Section:NewButton("Spider Man Fe", "Animation Script ", function() 
      loadstring(game:HttpGet(('https://pastebin.com/raw/2X0hKUgq'),true))() 
  end) 
+
+Tab2Section:NewButton("Chat Bypasser V2", "ur mom", function() 
+     loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7851fe798cf922d175832a7e3729a376.lua"))()
+ end) 
   
   
   
