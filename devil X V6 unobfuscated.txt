@@ -38,7 +38,7 @@ end)
   
  ---Tabs  
  local Tab10 = window:NewTab("Personal")  
- local Tab10Section = Tab9:NewSection("Personal stuff")  
+ local Tab10Section = Tab10:NewSection("Personal stuff")  
   
  local Tab1 = window:NewTab("Hubs")  
  local Tab1Section = Tab1:NewSection("Main")  
