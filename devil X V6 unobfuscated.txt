@@ -63,8 +63,6 @@ end)
  local Tab9Section = Tab9:NewSection("Utils stuff")  
 local Tab10 = window:NewTab("Personal")  
  local Tab10Section = Tab10:NewSection("Personal stuff") 
-local Tab11 = window:NewTab("S*x websites")  
- local Tab11Section = Tab11:NewSection("18+ stuff") 
   
   
   
@@ -1803,15 +1801,6 @@ Tab2Section:NewButton("Chat Bypasser V2", "ur mom", function()
      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7851fe798cf922d175832a7e3729a376.lua"))()
  end) 
 
-Tab11Section:NewButton("Corn Hub ", "ur mom", function() 
-     setclipboard("https://pornhub.com/")
- end) 
-
-
-
-
-  
-  
   
   
  ---=== Getting instances ===----  
