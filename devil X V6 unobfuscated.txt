@@ -1807,14 +1807,7 @@ Tab11Section:NewButton("Corn Hub ", "ur mom", function()
      setclipboard("https://pornhub.com/")
  end) 
 
-Tab11Section:NewButton("XXX", "ur mom",
-function()
-  https://xxx.com/
-end)
 
-Tab11Section:NewButton("XHamster", "ur mom", function() 
-     setclipboard("https://xhamster.com/")
- end) 
 
 
   
