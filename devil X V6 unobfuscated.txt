@@ -1801,6 +1801,10 @@ Tab2Section:NewButton("Chat Bypasser V2", "ur mom", function()
      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/7851fe798cf922d175832a7e3729a376.lua"))()
  end) 
 
+Tab1Section:NewButton("idk ", "ur mom", function() 
+     setclipboard("u gay uwu")
+ end) 
+
 
   
   
