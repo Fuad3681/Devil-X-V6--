@@ -34,7 +34,7 @@ end)
 
   
  local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/wAuqhZ3X"))()  
- local window = kavoUi.CreateLib("Devil X V6 ","DarkTheme")  
+ local window = kavoUi.CreateLib("Devil X V6.1 ","DarkTheme")  
   
  ---Tabs  
 
