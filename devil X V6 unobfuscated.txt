@@ -14,24 +14,10 @@ textLabel.TextSize = 20 -- Adjust the font size as needed
 textLabel.Font = Enum.Font.SourceSansBold
 textLabel.Parent = screenGui
 
--- RGB light effect
-local light = Instance.new("PointLight")
-light.Color = Color3.new(1, 0, 0) -- Red light color
-light.Range = 10 -- Adjust the range as needed
-light.Parent = player.Character.Head -- Attach the light to the player's head
-
 game:GetService("RunService").RenderStepped:Connect(function()
     -- Update the game name continuously
     textLabel.Text = "Current Game: " .. game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
-
-    -- Update the light color with an RGB cycle
-    local hue = tick() % 5 / 5 -- Adjust the cycle speed as needed
-    light.Color = Color3.fromHSV(hue, 1, 1)
-end)
-
   
-
-
   
  local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/wAuqhZ3X"))()  
  local window = kavoUi.CreateLib("Devil X V6.1 ","DarkTheme")  
@@ -58,7 +44,8 @@ end)
  local Tab6Section = Tab6:NewSection("New Script")  
   
  local Tab7 = window:NewTab("Animations fe")  
- local Tab7Section = Tab7:NewSection("Fe animation")   
+ local Tab7Section = Tab7:NewSection("Fe animation")  
+ 
  local Tab9 = window:NewTab("Utils")  
  local Tab9Section = Tab9:NewSection("Utils stuff")  
 local Tab10 = window:NewTab("Personal")  
@@ -67,7 +54,8 @@ local Tab10 = window:NewTab("Personal")
   
   
  ---Buttons  
-  
+  
+
   local players = game:GetService("Players")
 local user = players.LocalPlayer
 
